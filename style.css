@@ -1,0 +1,14 @@
+form,
+form * {
+    font-size: 1.5rem;
+    font-family: Monospace;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+li:nth-of-type(3n) {
+    font-weight: bold;
+}
