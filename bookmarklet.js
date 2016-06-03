@@ -6,7 +6,7 @@ javascript: (function(){
     
     var storage = JSON.parse(localStorage.getItem(storagePath));
     
-    if (storage !== {}) {
+    if (storage !== null) {
         min = Number(storage.min);
         max = Number(storage.max);
     }
@@ -23,7 +23,6 @@ javascript: (function(){
         max : max
     }));
     var str = 'Random number between ' + min + ' and ' + (max - 1);
-    console.log(str);
     while (continueV) {
         var rtn2 = prompt(str, Math.floor((Math.random()*(max-min))) + min);
         if (rtn2 === null) {

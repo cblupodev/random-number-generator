@@ -1,6 +1,7 @@
 form,
 form *,
-button {
+button,
+ul {
     font-size: 1.5rem;
     font-family: Monospace;
 }
@@ -12,14 +13,4 @@ ul {
 
 li:nth-of-type(3n) {
     font-weight: bold;
-}
-
-button, #submit {
-    float: left !important;
-}
-
-button:after {
-    content: '';
-    display: block;
-    clear: both;
 }
